@@ -5,7 +5,14 @@ function MainContent(): JSX.Element {
   return (
     <main>
       <FixedEntry />
-      <FixedEntry />
+      <JournalEntry 
+        title={"Letting them know"}
+        tags={['JavaScript', 'HTML', 'CSS']}
+        body={'This is how we learn react and JavaScript'}
+        views={3}
+        likes={5}
+        postDate={{month: 'April', day: 19, year: 2022}}
+      />
       <JournalEntry
         title={"Discovering React components"}
         tags={["react", "components", "reusability"]}
